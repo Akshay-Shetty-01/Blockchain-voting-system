@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Voter Login</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+  <h2>Voter Login / Registration</h2>
+  <form method="POST">
+    <input type="text" name="voter_id" placeholder="Voter ID" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <button type="submit">Proceed</button>
+  </form>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+</div>
+</body>
+</html>
